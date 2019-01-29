@@ -3,9 +3,16 @@ body{
 }
 
 #container{
-    width: 960px;
+    width: 1100px;
     margin: 0 auto;
 }
+
+#slide{
+    margin-top: 50px;
+    font-size: 25px;
+  
+}
+
 
 
 
