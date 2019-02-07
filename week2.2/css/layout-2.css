@@ -5,14 +5,15 @@
     margin-right: auto;
     
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat (3, max content);
-    grid-gap: 1em;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat (4, max-content);
+    grid-gap: 5em;
     
     grid-template-areas:
-        " header header menu"
-        "post signup login"
-        "posts posts posts";
+        " header header signup login"
+        " blank menu menu b"
+        "blank post post post"
+        " posts posts posts posts";
 }
 
 #title{
@@ -20,4 +21,37 @@
 }
 
 #menu{
-    grid-area:
+    grid-area:menu;
+}
+
+#login{
+    grid-area:login;
+}
+
+#sign-up{
+    grid-area:signup;
+}
+
+#post{
+    grid-area:post;
+}
+
+#posts{
+    grid-area: posts;
+}
+
+ul{
+    list-style-type: none;
+}
+
+li{
+    float: left;
+    overflow: hidden;
+    font-size: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
