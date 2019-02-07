@@ -1,18 +1,23 @@
 #container{
     background-color: forestgreen;
-    width:960px;
+    width: 960px;
     margin-left: auto;
     margin-right: auto;
-
+    
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-} 
+    grid-template-rows: repeat (3, max content);
+    grid-gap: 1em;
+    
+    grid-template-areas:
+        " header header menu"
+        "post signup login"
+        "posts posts posts";
+}
 
 #title{
-    grid-column-start:1;
-    grid-column-end:4;
+    grid-area: header;
 }
 
-#posts{
-    
-}
+#menu{
+    grid-area:
