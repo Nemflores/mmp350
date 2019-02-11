@@ -1,0 +1,57 @@
+#container{
+    background-color: mediumpurple;
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat (4, max-content);
+    grid-gap: 5em;
+    
+    grid-template-areas:
+        " menu menu si header"
+        " signup login posts posts"
+        "post post posts posts"
+        " no no posts posts";
+}
+
+#title{
+    grid-area: header;
+}
+
+#menu{
+    grid-area:menu;
+}
+
+#login{
+    grid-area:login;
+}
+
+#sign-up{
+    grid-area:signup;
+}
+
+#post{
+    grid-area:post;
+}
+
+#posts{
+    grid-area: posts;
+}
+
+ul{
+    list-style-type: none;
+}
+
+li{
+    float: left;
+    overflow: hidden;
+    font-size: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
