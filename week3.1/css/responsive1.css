@@ -17,6 +17,14 @@
 /*tablet*/
 @media(min-width:401px) and (max-width:800px){
     #container{
+        grid-template-rows:3fr;
+        grid-template-columns:3fr;
+        grid-template-areas:
+            "menu header blank"
+            "signup post posts"
+            "login post posts"
+            
+            
         
     }
 }
