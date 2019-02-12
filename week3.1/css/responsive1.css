@@ -1,0 +1,22 @@
+/*mobile*/
+@media (max-width: 400px) {
+    #container{
+        width: 100%;
+        grid-template-columns:1fr;
+        grid-template-areas:
+            "header"
+            "menu"
+            "signup"
+            "login"
+            "post"
+            "posts"
+            ;
+            }
+    }
+
+/*tablet*/
+@media(min-width:401px) and (max-width:800px){
+    #container{
+        
+    }
+}
