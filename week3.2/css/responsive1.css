@@ -1,0 +1,53 @@
+/*mobile*/
+@media (max-width: 400px) {
+    #container{
+        width: 100%;
+        grid-template-columns:1fr;
+        grid-template-areas:
+            "menu"
+            "header"
+            "signup"
+            "login"
+            "post"
+            "posts"
+            ;
+            }
+    
+    #menu-list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #menu-list li{
+        flex-basis: auto;
+        font-size: 30px;
+    }
+    
+}
+
+/*tablet*/
+@media(min-width:401px) and (max-width:800px){
+    #container{
+        grid-template-rows:3fr;
+        grid-template-columns:3fr;
+        grid-template-areas:
+            "menu menu menu"
+            "signup header posts"
+            "login post posts"
+            }
+    
+    #menu-list{
+        display: flex;
+        
+        justify-content:space-between;
+        fl
+        
+    }
+    
+    #menu-list li{
+        font-size: 30px;
+    }
+    
+    
+}
