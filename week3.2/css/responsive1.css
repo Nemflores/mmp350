@@ -29,6 +29,7 @@
 /*tablet*/
 @media(min-width:401px) and (max-width:800px){
     #container{
+        width: 760px;
         grid-template-rows:3fr;
         grid-template-columns:3fr;
         grid-template-areas:
