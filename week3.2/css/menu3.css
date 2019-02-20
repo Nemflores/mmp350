@@ -7,5 +7,6 @@
     }
 
 #menu-list li{
-    flex-basis: 10px;
+    background-color:cornflowerblue;
+    flex-basis: 25px;
 }

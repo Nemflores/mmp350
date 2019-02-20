@@ -4,8 +4,13 @@
     display: flex;
     
     justify-content: flex-end;
+    align-items:center;
+    flex-wrap: wrap;
     }
 
 #menu-list li{
+    background-color: blanchedalmond;
     flex-basis: 150px;
+    
+    font-size: 30px
 }

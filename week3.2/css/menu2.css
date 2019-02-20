@@ -7,5 +7,8 @@
     }
 
 #menu-list li{
+    flex-direction:row;
+    background-color: aqua;
     flex-basis: 150px;
+    font-size: 20px;
 }
