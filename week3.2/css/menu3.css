@@ -2,11 +2,13 @@
     padding: 0;
     list-style: none;
     display: flex;
-    
-    justify-content:space-between
-    }
+    flex-wrap: wrap;
+    align-items: flex-end;
+    flex-direction:column;
+     }
 
 #menu-list li{
     background-color:cornflowerblue;
-    flex-basis: 25px;
-}
+    font-size: 30px;
+    flex-basis: 45px;
+    }

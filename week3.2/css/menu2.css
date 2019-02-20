@@ -2,13 +2,16 @@
     padding: 0;
     list-style: none;
     display: flex;
-    
-    justify-content:space-between
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content:center;
+   
     }
 
 #menu-list li{
-    flex-direction:row;
-    background-color: aqua;
-    flex-basis: 150px;
-    font-size: 20px;
+    font-size: 40px;
+    background-color: palevioletred;
+    text-align: center;
+        
+
 }

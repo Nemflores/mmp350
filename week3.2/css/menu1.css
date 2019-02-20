@@ -2,15 +2,15 @@
     padding: 0;
     list-style: none;
     display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    flex-direction: row-reverse;
     
-    justify-content: flex-end;
-    align-items:center;
-    flex-wrap: wrap;
     }
 
 #menu-list li{
     background-color: blanchedalmond;
     flex-basis: 150px;
-    
-    font-size: 30px
+    font-size: 30px;
+    text-align:center;
 }
