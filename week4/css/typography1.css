@@ -1,6 +1,4 @@
-@import url(<link href="https://fonts.googleapis.com/css?family=Fredoka+One|Josefin+Slab|Open+Sans+Condensed:300|Rubik" rel="stylesheet">
-
-)
+@import url
 
 
 body{
@@ -9,17 +7,15 @@ body{
 }
 
 #title{
-   font-family: 'Fredoka One', cursive;
+   
 }
 
 #login *, #sign-up *{
     
-font-family: 'Josefin Slab', serif;
-    
 }
 
 #posts{
-    font-family: 'Open Sans Condensed', sans-serif;
+    
 }
 
 #menu a{
