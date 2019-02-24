@@ -1,4 +1,4 @@
-@import url
+@import url('https://fonts.googleapis.com/css?family=Anton|Cardo|Cormorant+Garamond|Roboto+Slab');
 
 
 body{
@@ -7,16 +7,26 @@ body{
 }
 
 #title{
-   font-size: 30px;
-    text-shadow: 4px 2px 0 pink;
+    color:skyblue;
+    font-size: 30px;
+    text-shadow: 6px 1px 0 black;
+    font-family:'Anton', sans-serif; 
+    letter-spacing: 5px;
+    
 }
 
-#login *, #sign-up *{
-    
+#login *, #sign-up *,#post *{
+   font-family: 'Cormorant Garamond', serif;
 }
 
 #posts{
-    
+    font-family: 'Cardo', serif;
+}
+
+
+
+#menu{
+    font-family:'Roboto Slab', serif;
 }
 
 #menu a{
@@ -30,5 +40,85 @@ body{
     background-color: aqua;
 }
 
+#write-post{
+	width: 100%;
+	padding: 1em;
+	resize: none;
+}
+
+.post{
+    margin: 2em 0;
+}
+
+.post-text{
+    font-size: 1.2em;
+    margin-bottom: .6em;
+}
+
+.author{
+    color: darkblue;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.date{
+    color:ghostwhite;
+}
+
+/*mobile*/
+@media (max-width: 400px) {
+    
+    .post-text{
+    font-size: 1.5em;
+    margin-left: .5em;
+    margin-right: 1em;
+    margin-bottom: .6em;
+}
+    
+    .post-info{
+        font-size: 1.2em;
+        margin-left:.6em;
+    }
+    
+    
+    
+    .date{
+        margin-left:.6em ;
+    }
+    
+       #write-post{
+        font-size: 20px;
+        font-weight: 800;
+}
+    
+    
+}
+
+/*tablet*/
+@media(min-width:401px) and (max-width:800px){
+    
+    #title{
+        font-size:2em;
+        margin: -1em;
+        margin-bottom:-100%;
+    }
+    
+    #write-post{
+        font-size: 1em;
+        font-weight: 800;
+}
+    
+     .post-text{
+        font-size:30px;
+        margin-bottom: 0px;
+        margin-left: -30px;
+}
+    .post-info{
+        font-size: 20px;
+    }
+    
+    
+    
+}
 
 
