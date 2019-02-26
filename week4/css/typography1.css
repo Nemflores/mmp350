@@ -17,6 +17,8 @@ body{
 
 #login *, #sign-up *,#post *{
    font-family: 'Cormorant Garamond', serif;
+    padding: 1em;
+    margin: .5em;
 }
 
 #posts{
@@ -27,17 +29,23 @@ body{
 
 #menu{
     font-family:'Roboto Slab', serif;
+    background-color:bisque;
+
 }
 
 #menu a{
     color:black;
     font-size:40px;
+    color: royalblue;
     transition: background-color .2s;
     
 }
 
 #menu a:hover{
-    background-color: aqua;
+    background-color:black;
+    color: hotpink;
+    border-radius: .5em;
+    
 }
 
 #write-post{
@@ -65,57 +73,26 @@ body{
     color:ghostwhite;
 }
 
+#write-post{
+    width: 100%;
+    padding-bottom: 10em;
+    resize: none;
+}
+
+
 /*mobile*/
 @media (max-width: 400px) {
     
-    .post-text{
-    font-size: 1.5em;
-    margin-left: .5em;
-    margin-right: 1em;
-    margin-bottom: .6em;
-}
     
-    .post-info{
-        font-size: 1.2em;
-        margin-left:.6em;
-    }
-    
-    
-    
-    .date{
-        margin-left:.6em ;
-    }
-    
-       #write-post{
-        font-size: 20px;
-        font-weight: 800;
-}
     
     
 }
 
 /*tablet*/
 @media(min-width:401px) and (max-width:800px){
+     body{
+         font-size: 16px;
     
-    #title{
-        font-size:2em;
-        margin: -1em;
-        margin-bottom:-100%;
-    }
-    
-    #write-post{
-        font-size: 1em;
-        font-weight: 800;
-}
-    
-     .post-text{
-        font-size:30px;
-        margin-bottom: 0px;
-        margin-left: -30px;
-}
-    .post-info{
-        font-size: 20px;
-    }
     
     
     

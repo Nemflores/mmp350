@@ -1,7 +1,4 @@
-@import url(<link href="https://fonts.googleapis.com/css?family=Fredoka+One|Josefin+Slab|Open+Sans+Condensed:300|Rubik" rel="stylesheet">
-
-)
-
+@import url('https://fonts.googleapis.com/css?family=Hammersmith+One|Quicksand|Staatliches');
 
 body{
     font-size: 18px;
@@ -9,17 +6,22 @@ body{
 }
 
 #title{
-   font-family: 'Fredoka One', cursive;
+   font-family: 'Hammersmith One', sans-serif;
+    font-size: 2em;
 }
 
 #login *, #sign-up *{
     
-font-family: 'Josefin Slab', serif;
+font-family: 'Quicksand', sans-serif;
     
 }
 
 #posts{
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-family:'Quicksand', sans-serif;
+}
+
+#menu{
+    font-family: 'Staatliches', cursive;
 }
 
 #menu a{
@@ -31,6 +33,12 @@ font-family: 'Josefin Slab', serif;
 
 #menu a:hover{
     background-color: aqua;
+}
+
+#write-post{
+    width: 100%;
+    padding: 1.5em;
+    resize: none;
 }
 
 

@@ -1,7 +1,4 @@
-@import url(<link href="https://fonts.googleapis.com/css?family=Fredoka+One|Josefin+Slab|Open+Sans+Condensed:300|Rubik" rel="stylesheet">
-
-)
-
+@import url('https://fonts.googleapis.com/css?family=B612|PT+Sans+Narrow|PT+Serif+Caption');
 
 body{
     font-size: 18px;
@@ -9,17 +6,26 @@ body{
 }
 
 #title{
-   font-family: 'Fredoka One', cursive;
+    color:floralwhite;
+    font-size: 30px;
+    text-shadow: 6px 1px 0 black;
+    font-family:'PT Serif Caption', serif; ;
+    
+    
 }
 
-#login *, #sign-up *{
-    
-font-family: 'Josefin Slab', serif;
-    
+#login *, #sign-up *,#post *{
+   font-family:'PT Sans Narrow', sans-serif; ;
 }
 
 #posts{
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-family:'PT Sans Narrow', sans-serif; ;
+}
+
+
+
+#menu{
+    font-family:'B612', sans-serif;
 }
 
 #menu a{
@@ -30,8 +36,99 @@ font-family: 'Josefin Slab', serif;
 }
 
 #menu a:hover{
-    background-color: aqua;
+    background-color: black;
+    color: beige;
 }
+
+#write-post{
+	width: 100%;
+	padding: 1em;
+	resize: none;
+}
+
+.post{
+    margin: 2em 0;
+}
+
+.post-text{
+    font-size: 1.2em;
+    margin-bottom: .6em;
+}
+
+.author{
+    color: darkblue;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.date{
+    color:ghostwhite;
+}
+
+#write-post{
+    width: 100%;
+    padding: 1.5em;
+    resize: none;
+}
+
+
+/*mobile*/
+@media (max-width: 400px) {
+    
+    .post-text{
+    font-size: 1.5em;
+    margin-left: .5em;
+    margin-right: 1em;
+    margin-bottom: .6em;
+}
+    
+    .post-info{
+        font-size: 1.2em;
+        margin-left:.6em;
+    }
+    
+    
+    
+    .date{
+        margin-left:.6em ;
+    }
+    
+       #write-post{
+        font-size: 20px;
+        font-weight: 800;
+}
+    
+    
+}
+
+/*tablet*/
+@media(min-width:401px) and (max-width:800px){
+    
+    #title{
+        font-size:2em;
+        margin: -1em;
+        margin-bottom:-100%;
+    }
+    
+    #write-post{
+        font-size: 1em;
+        font-weight: 800;
+}
+    
+     .post-text{
+        font-size:30px;
+        margin-bottom: 0px;
+        margin-left: -30px;
+}
+    .post-info{
+        font-size: 20px;
+    }
+    
+    
+    
+    
+}
+
 
 
 
