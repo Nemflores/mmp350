@@ -8,6 +8,8 @@ body{
 #title{
    font-family: 'Hammersmith One', sans-serif;
     font-size: 2em;
+    color: snow;
+    text-shadow: 5px 1px purple;
 }
 
 #login *, #sign-up *{
@@ -40,6 +42,17 @@ font-family: 'Quicksand', sans-serif;
     padding: 1.5em;
     resize: none;
 }
+
+.author{
+    color: darkblue;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.date{
+    color:ghostwhite;
+}
+
 
 
 

@@ -26,6 +26,7 @@ body{
 
 #menu{
     font-family:'B612', sans-serif;
+    text-shadow: 2px 2px pink;
 }
 
 #menu a{
