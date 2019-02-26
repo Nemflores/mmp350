@@ -82,7 +82,13 @@ body{
 
 /*mobile*/
 @media (max-width: 400px) {
+    #title{
+        font-size: 1.7em;
+    }
     
+    .post-text{
+        font-size:1.5em
+    }
     
     
     
@@ -92,6 +98,21 @@ body{
 @media(min-width:401px) and (max-width:800px){
      body{
          font-size: 16px;
+     }
+    
+    #title{
+        font-size: 3em;
+        margin:3em -1.5em -10em -1em;
+        
+         
+    }
+    
+    .post-text{
+        font-size: 1.5em;
+        margin-right:10px;
+    }
+    
+    
     
     
     
