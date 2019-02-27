@@ -17,8 +17,9 @@ body{
 
 #login *, #sign-up *,#post *{
    font-family: 'Cormorant Garamond', serif;
-    padding: 1em;
+    
     margin: .5em;
+    font-size: 15px;
 }
 
 #posts{
@@ -74,8 +75,9 @@ body{
 }
 
 #write-post{
+    font-size: 25px;
     width: 100%;
-    padding-bottom: 10em;
+
     resize: none;
 }
 
@@ -83,11 +85,12 @@ body{
 /*mobile*/
 @media (max-width: 400px) {
     #title{
-        font-size: 1.7em;
+        font-size: 10vw;
+
     }
     
     .post-text{
-        font-size:1.5em
+        font-size:8vw;
     }
     
     
@@ -96,20 +99,35 @@ body{
 
 /*tablet*/
 @media(min-width:401px) and (max-width:800px){
-     body{
-         font-size: 16px;
-     }
     
+ 
     #title{
-        font-size: 3em;
-        margin:3em -1.5em -10em -1em;
-        
-         
+        font-size:5vw; 
+        margin-left: -2em;
+            
     }
     
     .post-text{
-        font-size: 1.5em;
-        margin-right:10px;
+        font-size:3vw ;
+        margin-left: -3em; 
+        
+    }
+
+    #write-post{
+    font-size: 25px;
+    width: 100%;
+    margin-left: -3em;
+    resize: none;
+}
+
+#menu-list{
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    flex-direction: row-reverse;
+    
     }
     
     
