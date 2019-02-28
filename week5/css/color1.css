@@ -1,0 +1,10 @@
+/*color scheme*/
+
+:root{
+    --main-color: #0548a8;
+    --
+}
+
+#title{
+    color:var(--main-color);
+}
