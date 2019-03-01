@@ -1,10 +1,82 @@
 /*color scheme*/
 
 :root{
-    --main-color: #0548a8;
+	--title-color:#000000;
+	--title-shadow:;
+    --author:white;
+    --menuback:;
+    --menuitem: #ffffff;
+    --background:#ddb9c3;
     --
 }
 
-#title{
-    color:var(--main-color);
+body{
+   
 }
+
+#title{
+
+    
+}
+
+#login *, #sign-up *,#post *{
+   
+}
+
+#posts{
+    
+}
+
+
+
+#menu{
+   
+
+}
+
+#menu a{
+   
+    
+}
+
+#menu a:hover{
+    
+    
+}
+
+#write-post{
+	
+}
+
+.post{
+    
+}
+
+.post-text{
+   
+}
+
+.author{
+
+}
+
+.date{
+
+}
+
+#write-post{
+    
+}
+
+#submit-post {
+    
+}
+
+#submit-sign-up{
+    
+}
+
+#submit-login{
+    
+ }
+
