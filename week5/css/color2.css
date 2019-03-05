@@ -1,21 +1,25 @@
 /*color scheme*/
 
 :root{
-	--title-color:#000000;
-	--title-shadow:;
-    --author:white;
-    --menuback:;
-    --menuitem: #ffffff;
-    --background:#ddb9c3;
+	--title-color:#002A5D;
+	--title-shadow:white;
+    --author:;
+    --menuback:#737687;
+    --menuitem:#448DFF ;
+    --background:;
     --
 }
 
-body{
-   
+#container{
+   background-color: var(--background);
 }
 
 #title{
-
+	color: var(--title-color);
+	background-color: var(--menuback);
+	border-radius: 2em;
+	padding: 1px 10px;
+    text-shadow:
     
 }
 
@@ -30,17 +34,20 @@ body{
 
 
 #menu{
-   
+   background-color: var(--menuback);
 
 }
 
 #menu a{
-   
-    
+      color:var(--menuitem) ;
 }
 
 #menu a:hover{
-    
+	color: var(--menuback);
+    background-color: var(--menuitem);
+    transition: .5s;
+    border-radius: 2em;
+    padding: 5px 10px;
     
 }
 
@@ -49,15 +56,15 @@ body{
 }
 
 .post{
-    
+   border-bottom: 2px solid var(--title-shadow); 
 }
 
 .post-text{
-   
+  
 }
 
 .author{
-
+	text-decoration: underline;
 }
 
 .date{
@@ -69,14 +76,16 @@ body{
 }
 
 #submit-post {
-    
+    background-color: var(--buttons);
 }
 
 #submit-sign-up{
-    
+    background-color: var(--buttons);
 }
 
 #submit-login{
-    
+    background-color: var(--buttons);
  }
+
+
 
