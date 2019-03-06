@@ -2,12 +2,14 @@
 
 :root{
 	--title-color:#f7e013;
-	--title-shadow:white;
-    --author:;
+	--title-shadow:black;
+    --author:white;
     --menuback:#045eef;
     --menuitem:#f7e013;
     --background:#cadcf9;
-    --
+    --date:blue;
+    --buttons: gold;
+    --textbox:grey;
 }
 
 #container{
@@ -19,16 +21,12 @@
 	background-color: var(--menuback);
 	border-radius: 2em;
 	padding: 1px 10px;
-    text-shadow:
+  text-shadow:5px 1px var(--title-shadow);
     
 }
 
 #login *, #sign-up *,#post *{
    
-}
-
-#posts{
-    
 }
 
 
@@ -68,12 +66,9 @@
 }
 
 .date{
-
+  color:var();
 }
 
-#write-post{
-    
-}
 
 #submit-post {
     background-color: var(--buttons);

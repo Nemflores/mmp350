@@ -1,21 +1,26 @@
 /*color scheme*/
 
 :root{
-	--title-color:;
-	--title-shadow:;
+	--title-color:#adaac7;
+	--title-shadow:black;
     --author:white;
-    --menuback:;
-    --menuitem: ;
-    --background:white;
-    --
+    --menuback:#1c4015;
+    --menuitem:#9ad5d3;
+    --background:#9ad5d3;
+    --buttons:#54915f;
+    --date:blue;
 }
 
-body{
-   
+#container{
+   background-color: var(--background);
 }
 
 #title{
-
+	color: var(--title-color);
+	background-color: var(--menuback);
+	border-radius: 2em;
+	padding: 1px 10px;
+	text-shadow: 5px 1px var(--title-shadow);
     
 }
 
@@ -30,17 +35,20 @@ body{
 
 
 #menu{
-   
+   background-color: var(--menuback);
 
 }
 
 #menu a{
-   
-    
+      color:var(--menuitem) ;
 }
 
 #menu a:hover{
-    
+	color: var(--menuback);
+    background-color: var(--menuitem);
+    transition: .5s;
+    border-radius: 2em;
+    padding: 5px 10px;
     
 }
 
@@ -49,19 +57,20 @@ body{
 }
 
 .post{
-    
+   border-bottom: 2px solid var(--title-shadow); 
 }
 
 .post-text{
-   
+  
 }
 
 .author{
-
+	text-decoration: underline;
+	color: var(--author);
 }
 
 .date{
-
+	color:var(--date);
 }
 
 #write-post{
@@ -69,14 +78,14 @@ body{
 }
 
 #submit-post {
-    
+    background-color: var(--buttons);
 }
 
 #submit-sign-up{
-    
+    background-color: var(--buttons);
 }
 
 #submit-login{
-    
+    background-color: var(--buttons);
  }
 
