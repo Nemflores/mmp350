@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Hammersmith+One|Quicksand|Staatliches');
+
+body{
+    font-size: 18px;
+    line-height: 1.25;
+}
+
+#title{
+   font-family: 'Hammersmith One', sans-serif;
+    font-size: 2em;
+    text-shadow: 5px 1px purple;
+}
+
+#login *, #sign-up *{
+    font-size: 1em;
+    font-family: 'Quicksand', sans-serif;
+    
+}
+
+#posts{
+    font-family:'Quicksand', sans-serif;
+}
+
+#menu{
+    font-family: 'Staatliches', cursive;
+}
+
+#menu a{
+    font-size:40px;
+    
+}
+
+#menu a:hover{
+    background-color:;
+}
+
+#write-post{
+    font-size: 20px;
+    width: 100%;
+    padding: 1.5em;
+    resize: none;
+}
+
+.author{
+    color: ;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.date{
+    color:;
+}
+
+#submit-post {
+    font-size: 1.25rem;
+    width: 60%;
+    border: 0;
+    outline: 0;
+    padding: 0.30em 0;
+    border-radius: 1em;
+}
+
+#submit-sign-up{
+    font-size: 1rem;
+    width: 60%;
+    border: 0;
+    outline: 0;
+    border-radius: 1em;
+    }
+
+#submit-login{
+    font-size: 1rem;
+    width: 60%;
+    border: 0;
+    outline: 0;
+    border-radius: 1em;
+}
+
+
+
+
+
