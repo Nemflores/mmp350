@@ -1,0 +1,23 @@
+:root{
+    --main-hue:240;
+    --main-color:hsl(240,50%,50%);
+        
+    --accent-one-hue: calc(240 - 30);
+    --accent-one: hsl(var(--accent-one-hue), 50%, 50%);
+        
+    --accent-two-hue: calc(var(--main-hue) + 30);
+    --accent-two:hsl(var(--accent-two-hye), 50%, 50%);
+}
+
+.post{
+    color:var(--main-color); 
+    border: 3px solid var(--accent-one);
+    
+}
+    
+#title{
+    color:var(--main-color);
+    text-shadow: 5px 1px ;
+}
+    
+    
