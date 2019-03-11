@@ -1,13 +1,14 @@
 /*color scheme*/
 
 :root{
-	--title-color:#fdb1c8;
-	--title-shadow:#b2b1b1;
-    --author:white;
+	--title-color:#FF4C4C;
+	--title-shadow:white;
+    --author:blue;
     --menuback:black;
-    --menuitem:#ffe6ee;
-    --background:#dddddd;
-    --buttons: #FFD0DF;
+    --menuitem:#FF0000 ;
+    --background:#ff9999;
+    --buttons:#7F2626;
+    --date:blue;
 }
 
 #container{
@@ -19,6 +20,7 @@
 	background-color: var(--menuback);
 	border-radius: 2em;
 	padding: 1px 10px;
+  text-shadow:5px 1px var(--title-shadow);
     
 }
 
@@ -65,10 +67,11 @@
 
 .author{
 	text-decoration: underline;
+  color: var(--author);
 }
 
 .date{
-
+  color:var(--date);
 }
 
 #write-post{

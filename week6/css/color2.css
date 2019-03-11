@@ -3,7 +3,7 @@
 :root{
 	--title-color:#f7e013;
 	--title-shadow:black;
-    --author:white;
+    --author:purple;
     --menuback:#045eef;
     --menuitem:#f7e013;
     --background:#cadcf9;
@@ -63,10 +63,11 @@
 
 .author{
 	text-decoration: underline;
+  color: var(--author);
 }
 
 .date{
-  color:var();
+  color:var(--date);
 }
 
 
