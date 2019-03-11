@@ -1,13 +1,13 @@
 /*color scheme*/
 
 :root{
-	--title-color:#adaac7;
-	--title-shadow:black;
+	--title-color:#090DFF;
+	--title-shadow:#000000;
     --author:white;
-    --menuback:#1c4015;
-    --menuitem:#9ad5d3;
-    --background:#9ad5d3;
-    --buttons:#54915f;
+    --menuback:#FF691E;
+    --menuitem:#090DFF;
+    --background:#5859B2;
+    --buttons:#48CC1C;
     --date:blue;
 }
 
@@ -57,7 +57,8 @@
 }
 
 .post{
-   border-bottom: 2px solid var(--title-shadow); 
+   border: 2px solid var(--title-shadow);   
+    
 }
 
 .post-text{
