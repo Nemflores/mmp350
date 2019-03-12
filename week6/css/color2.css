@@ -11,6 +11,10 @@
     --buttons: gold;
     --textbox:grey;
 }
+    
+body{
+    background-color: var(--background);
+}
 
 #container{
    background-color: var(--background);
