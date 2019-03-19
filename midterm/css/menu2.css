@@ -1,0 +1,17 @@
+#menu-list{
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content:center;
+   
+    }
+
+#menu-list li{
+    font-size: 40px;
+    background-color: palevioletred;
+    text-align: center;
+        
+
+}
