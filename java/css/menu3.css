@@ -1,0 +1,14 @@
+#menu-list{
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    flex-direction:column;
+     }
+
+#menu-list li{
+    background-color:cornflowerblue;
+    font-size: 30px;
+    flex-basis: 45px;
+    }
