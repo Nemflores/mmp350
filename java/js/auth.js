@@ -34,11 +34,11 @@ loginButton.onlick = function() {
     const email = loginEmail.value;
     const password = loginPassword.value;
     firebase.auth().signInWithEmailAndPassword(email, password);
-};
+}
 
 /* auth state */
 
-const displayName = document.getElementById('displat-name');
+const displayName = document.getElementById('display-name');
 function authState(user) {
     if (user) {
         document.body.classList.add('logged-in');
