@@ -1,4 +1,5 @@
 /* sign up */
+
 const signupButton = document.getElementById('submit-sign-up');
 const signupUsername = document.getElementById('sign-up-username');
 const signupEmail = document.getElementById('sign-up-email');
@@ -9,6 +10,12 @@ function updateUser(credential){
         displayName: signupUsername.value
     };
     credential.user.updateProfile(userInfo);
+    authState(credential.user);
+    
+    /* add user to database  */
+    const db  = firebase.database();
+    const ref = db.ref('users').child(credential.user.uid);
+    ref.set(userInfo);
 }
 
 function createUser() {
@@ -34,16 +41,18 @@ loginButton.onlick = function() {
     const email = loginEmail.value;
     const password = loginPassword.value;
     firebase.auth().signInWithEmailAndPassword(email, password);
-}
+};
 
 /* auth state */
 
 const displayName = document.getElementById('display-name');
+const profilelink = document.getElementById('profile-link');
 function authState(user) {
     if (user) {
         document.body.classList.add('logged-in');
         displayName.textContent = 'Hello, ' + user.displayName;
-    }else{
+        profilelink.href = '/user.html?uid=' + user.uid;
+    }else {
         document.body.classList.remove('logged-in');
         }
 }
