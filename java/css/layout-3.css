@@ -46,6 +46,8 @@ a{
     text-decoration: none;
 }
 
+#profile-link
+
 #user-info {
 	display: none;
 	grid-area: sign-up;

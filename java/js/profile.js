@@ -8,4 +8,5 @@ ref.on('value' , updateUser)
 const profileDisplayName = document.getElementById('profile-display-name');
 function updateUser(snapshot) {
     const user = snapshot.val();
+    profileDisplayName.textContent = user.displayName;
 }
