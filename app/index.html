@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+	<title>layout</title>
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-database.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyDogkXAOJGzRx2cWLO8_MZm4Cmg_HtUsZA",
+        authDomain: "buff-wolf.firebaseapp.com",
+        databaseURL: "https://buff-wolf.firebaseio.com",
+        projectId: "buff-wolf",
+        storageBucket: "buff-wolf.appspot.com",
+        messagingSenderId: "71158617863"
+      };
+      firebase.initializeApp(config);
+</script>
+</head>
+<body>
+	<div id="container">
+		<!-- title / logo -->
+		<div id="title">
+			<h1>Buff Wolf</h1>
+		</div>
+        
+        <!-- user info -->
+        <div id="user-info" >
+	       <div id="display-name"></div>
+	       <button id="log-out">Log Out</button>
+        </div>
+        
+		<!-- login -->
+		<div id="login">
+			<input type="text" id="login-email" placeholder="Email">
+			<input type="password" id="login-password" placeholder="Password">
+			<button id="submit-login">Login</button>
+		</div>
+		
+		<!-- sign up -->
+		<div id="sign-up">
+			<input type="text" id="sign-up-username" placeholder="Username">
+			<input type="email" id="sign-up-email" placeholder="Email">
+			<input type="password" id="sign-up-password" placeholder="Password">
+			<button id="submit-sign-up">Sign Up</button>
+		</div>
+
+		<!-- navigation / menu -->
+		<div id="menu">
+			<ul id="menu-list">
+				<li><a href="">Home</a></li>
+				<li><a id = "profile-link" href="">Profile</a></li>
+                <li><a href="">Users</a></li>
+			</ul>
+		</div>
+		
+		<!-- posting content -->
+		<div id="post">
+			<textarea id="write-post" placeholder="What's happening?"></textarea>
+			<button id="submit-post">Post</button>
+		</div>
+	
+		<!-- feed/posts/users content -->
+		<div id="posts">
+			<!-- post 1 -->
+			<div class="post">
+				<div class="post-text">Great back and biceps workout routine - Beginner</div>
+				<div class="post-info">
+					by <span class="author">Wayne Gretzky</span>
+					on <span class="date">January 30, 2018</span>
+				</div>
+			</div>
+
+			<!-- post 2 -->
+			<div class="post">
+				<div class="post-text">Chest workout no bench - Intermediate </div>
+				<div class="post-info">
+					by <span class="author">Serena Williams</span>
+					on <span class="date">November 1, 2020</span>
+				</div>
+			</div>
+			
+			<!-- post 3 -->
+			<div class="post">
+				<div class="post-text">Full body workout no dumbells - Advanced</div>
+				<div class="post-info">
+					by <span class="author">Michael Jordan</span>
+					on <span class="date">December 31, 2019</span>
+				</div>
+			</div>
+		</div>
+	</div>
+    <script src="js/auth.js"></script>
+    
+</body>
+</html>

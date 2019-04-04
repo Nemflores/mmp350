@@ -1,0 +1,90 @@
+/*color scheme*/
+
+:root{
+	--title-color:#f7e013;
+	--title-shadow:black;
+    --author:purple;
+    --menuback:#045eef;
+    --menuitem:#f7e013;
+    --date:blue;
+    --buttons: gold;
+    --textbox:grey;
+}
+    
+body{
+    background-color: var(--background);
+}
+
+#container{
+   background-color: var(--background);
+}
+
+#title{
+	color: var(--title-color);
+	background-color: var(--menuback);
+	border-radius: 2em;
+	padding: 1px 10px;
+  text-shadow:5px 1px var(--title-shadow);
+    
+}
+
+#login *, #sign-up *,#post *{
+   
+}
+
+
+
+#menu{
+   background-color: var(--menuback);
+
+}
+
+#menu a{
+      color:var(--menuitem) ;
+}
+
+#menu a:hover{
+	color: var(--menuback);
+    background-color: var(--menuitem);
+    transition: .5s;
+    border-radius: 2em;
+    padding: 5px 10px;
+    
+}
+
+#write-post{
+	
+}
+
+.post{
+   border-bottom: 2px solid var(--title-shadow); 
+}
+
+.post-text{
+  
+}
+
+.author{
+	text-decoration: underline;
+  color: var(--author);
+}
+
+.date{
+  color:var(--date);
+}
+
+
+#submit-post {
+    background-color: var(--buttons);
+}
+
+#submit-sign-up{
+    background-color: var(--buttons);
+}
+
+#submit-login{
+    background-color: var(--buttons);
+ }
+
+
+
