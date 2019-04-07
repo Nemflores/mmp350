@@ -52,11 +52,15 @@ a{
 
 #user-info {
 	display: none;
-	grid-area: sign-up;
+	grid-area: login;
 }
 
 #edit, #edit-profile{
     display: none;
+}
+
+.logged-in #edit {
+	display: block;
 }
 
 .logged-in #user-info {
