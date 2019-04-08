@@ -9,11 +9,9 @@
     --date:blue;
     --buttons: gold;
     --textbox:grey;
+    --background:#cadcf9;
 }
     
-body{
-    background-color: var(--background);
-}
 
 #container{
    background-color: var(--background);
