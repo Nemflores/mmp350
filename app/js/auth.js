@@ -47,6 +47,7 @@ loginButton.onclick = function() {
 
 const displayName = document.getElementById('display-name');
 const profilelink = document.getElementById('profile-link');
+
 function authState(user) {
     if (user) {
         document.body.classList.add('logged-in');

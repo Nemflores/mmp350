@@ -19,14 +19,14 @@ const editProfile = document.getElementById('edit-profile');
 const profileNameInput = document.getElementById('edit-display-name');
 const profileEditButton = document.getElementById('submit-display-name');
 
-editButton.onclick = function(){
-    editButton.style.display = 'block';
+editButton.onclick = function() {
+	editProfile.style.display = 'block';
 };
 
 profileEditButton.onclick = updateProfile;
 
 function updateProfile() {
-    const username = profileNameInput.value;
+	const username = profileNameInput.value;
 	if (username.length > 2) {
 		ref.update({ displayName: username });
 		editProfile.style.display = 'none';
