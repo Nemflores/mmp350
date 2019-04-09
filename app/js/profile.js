@@ -1,16 +1,17 @@
-const uid = location.search.split('=') [1];
+// get the user id from the URL
+const uid = location.search.split('=')[1];
 const db = firebase.database();
 const ref = db.ref('users').child(uid);
 
-// firebase event, any chabge to database//
-ref.on('value' , updateUser)
+// firebase event, any change to database
+ref.on('value', updateUser);
 
 const profileDisplayName = document.getElementById('profile-display-name');
 
-function updateUser(snapshot) {
-    const user = snapshot.val();
-    profileDisplayName.textContent = user.displayName;
-    profileNameInput.placeholder = user.displayName;
+function updateUser(snapshot) {	
+	const user = snapshot.val();
+	profileDisplayName.textContent = user.displayName;
+	profileNameInput.placeholder = user.displayName;
 }
 
 /* update data */
@@ -36,3 +37,4 @@ function updateProfile() {
 		profileNameInput.classList.add('error');
 	}
 }
+
