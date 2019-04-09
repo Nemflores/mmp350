@@ -46,8 +46,8 @@ a{
     text-decoration: none;
 }
 
-#profile{
- grid-area:main;
+#profile {
+	grid-area: main;
 }
 
 #user-info {
@@ -55,8 +55,8 @@ a{
 	grid-area: login;
 }
 
-#edit, #edit-profile{
-    display: none;
+#edit, #edit-profile {
+	display: none;
 }
 
 .logged-in #edit {
@@ -67,6 +67,7 @@ a{
 	display: block;
 }
 
-.logged-in #login, .logged-in #sign-up {
+.logged-in #sign-up,
+.logged-in #login {
 	display: none;
 }
