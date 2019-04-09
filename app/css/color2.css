@@ -17,7 +17,7 @@
    background-color: var(--background);
 }
 
-#title{
+#title, #profile-display-name{
 	color: var(--title-color);
 	background-color: var(--menuback);
 	border-radius: 2em;

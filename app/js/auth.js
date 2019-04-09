@@ -52,7 +52,7 @@ function authState(user) {
     if (user) {
         document.body.classList.add('logged-in');
         displayName.textContent = 'Hello, ' + user.displayName;
-        profilelink.href = '/user.html?uid=' + user.uid;
+        profilelink.href = 'user.html?uid=' + user.uid;
     }else {
         document.body.classList.remove('logged-in');
         }

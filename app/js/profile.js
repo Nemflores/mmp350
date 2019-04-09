@@ -10,6 +10,7 @@ const profileDisplayName = document.getElementById('profile-display-name');
 
 function updateUser(snapshot) {	
 	const user = snapshot.val();
+    console.log(user);
 	profileDisplayName.textContent = user.displayName;
 	profileNameInput.placeholder = user.displayName;
 }
