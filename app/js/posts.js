@@ -25,9 +25,8 @@ function createPost() {
     const date = el('span', 'date');
     date.textContent = post.date;
     
-    postInfo.innerHTML += "by";
+    
     postInfo.appendChild(author);
-    postInfo.innerHTML += "on";
     postInfo.appendChild(date);
     
     postDiv.appendChild(postInfo);
