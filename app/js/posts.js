@@ -24,6 +24,20 @@ function createPost(post) {
 	
 	const date = el('span', 'date');
 	date.textContent = post.date.split(' ').slice(0, 4).join(' ');
+    
+    const photo = el('div', 'photo');
+	const img = new Image();
+	photo.appendChild(img);
+	postDiv.appendChild(photo);
+	
+	const userRef = firebase.database().ref('users').child(post.uid);
+	userRef.once('value', function(snapshot) {
+		if (snapshot.val().photo) {
+			img.src = snapshot.val().photo;
+		} else {
+			img.src = 'https://upload.wikimedia.org/wikipedia/commons/7/7b/Egg_upright.jpg';
+		}
+	});
 	
 	postInfo.innerHTML += "by ";
 	postInfo.appendChild(author);

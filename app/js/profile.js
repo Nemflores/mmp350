@@ -39,3 +39,37 @@ function updateProfile() {
 	}
 }
 
+/*profile photo*/
+
+const photoInput = get('photo-input');
+const photoSubmit = get('submit-photo');
+photoSubmit.addEventListener('click', uploadPhoto);
+
+function uploadPhoto() {
+	const file = photoInput.files[0];
+	if (file) {
+		const storage = firebase.storage();
+		const photoRef = storage.ref('users').child(uid).child('profile-photo');
+		const promise = photoRef.put(file);
+		
+		promise.then(function(snapshot) {
+			return snapshot.ref.getDownloadURL();
+		}).then(updatePhoto);
+		
+	} else {
+		alert('Click Choose File');
+	}
+}
+
+function updatePhoto(url) {
+	ref.update({ photo: url });
+	displayPhoto(url);
+}
+
+function displayPhoto(url) {
+	const profileImg = get('profile-img');
+	profileImg.src = url;
+	const addPhoto = get('add-photo');
+	addPhoto.style.display = 'none';
+}
+
