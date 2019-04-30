@@ -1,16 +1,13 @@
 const postsDiv = document.getElementById('posts');
 const postRef = firebase.database().ref('posts');
-
 postRef.on('child_added', function(snapshot) {
 	createPost(snapshot.val());
 });
-
 function el(tag, clas) {
 	const element = document.createElement(tag);
 	element.classList.add(clas);
 	return element;
 }
-
 function createPost(post) {
 	const postDiv = el('div', 'post');
 	const postText = el('div', 'post-text');
@@ -24,12 +21,12 @@ function createPost(post) {
 	
 	const date = el('span', 'date');
 	date.textContent = post.date.split(' ').slice(0, 4).join(' ');
-    
-    const photo = el('div', 'photo');
+
+	const photo = el('div', 'photo');
 	const img = new Image();
 	photo.appendChild(img);
 	postDiv.appendChild(photo);
-	
+
 	const userRef = firebase.database().ref('users').child(post.uid);
 	userRef.once('value', function(snapshot) {
 		if (snapshot.val().photo) {
@@ -38,7 +35,7 @@ function createPost(post) {
 			img.src = 'https://upload.wikimedia.org/wikipedia/commons/7/7b/Egg_upright.jpg';
 		}
 	});
-	
+
 	postInfo.innerHTML += "by ";
 	postInfo.appendChild(author);
 	postInfo.innerHTML += " on ";
