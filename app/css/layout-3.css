@@ -10,7 +10,7 @@
     grid-gap: 5em;
     
     grid-template-areas:
-        " menu menu menu menu"
+        " menu menu menu search"
         " signup header posts posts"
         "login post posts posts"
         " main main posts posts";
@@ -38,6 +38,10 @@
 
 #posts{
     grid-area: posts;
+}
+
+#search{
+    grid-area: search;
 }
 
 

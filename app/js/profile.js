@@ -3,6 +3,14 @@ const uid = location.search.split('=')[1];
 const db = firebase.database();
 const ref = db.ref('users').child(uid);
 
+firebase.auth().onAuthStateChanged(function(user) {
+	if (user.uid == uid) {
+		document.body.classList.add('is-user');
+	} else {
+		document.body.classList.remove('is-user');
+	}
+});
+
 // firebase event, any change to database
 ref.on('value', updateUser);
 
@@ -10,7 +18,9 @@ const profileDisplayName = document.getElementById('profile-display-name');
 
 function updateUser(snapshot) {	
 	const user = snapshot.val();
-    console.log(user);
+	if (user.photo) {
+		displayPhoto(user.photo);	
+	}
 	profileDisplayName.textContent = user.displayName;
 	profileNameInput.placeholder = user.displayName;
 }
@@ -23,6 +33,8 @@ const profileEditButton = document.getElementById('submit-display-name');
 
 editButton.onclick = function() {
 	editProfile.style.display = 'block';
+	const addPhoto = get('add-photo');
+	addPhoto.style.display = 'block';
 };
 
 profileEditButton.onclick = updateProfile;
@@ -31,6 +43,7 @@ function updateProfile() {
 	const username = profileNameInput.value;
 	if (username.length > 2) {
 		ref.update({ displayName: username });
+		firebase.auth().currentUser.updateProfile({ displayName: username });
 		editProfile.style.display = 'none';
 		profileNameInput.classList.remove('error');
 	} else {
@@ -39,8 +52,11 @@ function updateProfile() {
 	}
 }
 
-/*profile photo*/
+function get(id) {
+	return document.getElementById(id);
+}
 
+/* upload profile photo */
 const photoInput = get('photo-input');
 const photoSubmit = get('submit-photo');
 photoSubmit.addEventListener('click', uploadPhoto);
@@ -72,4 +88,3 @@ function displayPhoto(url) {
 	const addPhoto = get('add-photo');
 	addPhoto.style.display = 'none';
 }
-
