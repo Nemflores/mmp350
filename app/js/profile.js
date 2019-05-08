@@ -14,6 +14,15 @@ function updateUser(snapshot) {
 	profileDisplayName.textContent = user.displayName;
 	profileNameInput.placeholder = user.displayName;
 }
+
+
+/* display user posts */
+const postsDiv = document.getElementById('user-posts');
+const postRef = firebase.database().ref('posts').orderByChild('uid').equalTo(uid);
+postRef.on('child_added', function(snapshot) {
+	createPost(snapshot.val());
+});
+
 /* update data */
 const editButton = document.getElementById('edit');
 const editProfile = document.getElementById('edit-profile');

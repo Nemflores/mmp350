@@ -47,10 +47,7 @@ function createPost(post, id) {
 	const likesDiv = el('div', 'likes');
 	const likeButton = el('button', 'like-button');
 	const likeDisplay = el('span', 'likes-display');
-	likesDiv.appendChild(likeButton);
-	likesDiv.appendChild(likeDisplay);
 	
-	likeButton.textContent = '♡';
 	
 	if (post.likes) {
 		const n = Object.keys(post.likes).length;
