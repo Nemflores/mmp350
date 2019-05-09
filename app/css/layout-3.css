@@ -36,15 +36,15 @@
     grid-area:post;
 }
 
-#posts{
+#posts {
     grid-area: posts;
+    margin-top: -25%;
 }
+
 
 #search{
     grid-area: search;
 }
-
-
 
 a{
     text-decoration: none;
