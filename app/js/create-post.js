@@ -6,8 +6,11 @@ function el(tag, clas) {
 
 function createPost(post, id) {
 	const postDiv = el('div', 'post');
+    const postTitle= el('div','post-title');
 	const postText = el('div', 'post-text');
 	postText.textContent = post.text;
+    postTitle.textContent = post.title;
+    postDiv.appendChild(postTitle);
 	postDiv.appendChild(postText);
 	
 	const postInfo = el('div', 'post-info');

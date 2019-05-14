@@ -1,4 +1,5 @@
 const postText = document.getElementById('write-post');
+const postTitle = document.getElementById('write-title')
 const submitPost = document.getElementById('submit-post');
 
 const db = firebase.database();
@@ -7,6 +8,7 @@ const ref = db.ref('posts');
 /* add a new post to the database */
 function addPost() {
 	const info = {
+        title: postTitle.value,
 		text: postText.value,
 		date: Date(),
 		uid: firebase.auth().currentUser.uid,

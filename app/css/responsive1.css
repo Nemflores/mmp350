@@ -3,14 +3,17 @@
     
     #container{
         width: 100%;
-        grid-template-columns:1fr;
+        grid-template-columns:100%;
         grid-template-areas:
             "menu"
             "header"
             "signup"
             "login"
             "post"
+            "search"
             "posts"
+    
+            
             ;
             }
     
@@ -28,7 +31,7 @@
 }
 
 /*tablet*/
-@media(min-width:401px) and (max-width:800px){
+@media (min-width:401px) and (max-width:800px){
     #container{
         max-width: 800px;
         grid-template-rows:3fr;
@@ -42,9 +45,7 @@
     #menu-list{
         display: flex;
         justify-content:flex-start;
-    
-        
-    }
+        }
     
     #menu-list li{
         font-size: 30px;

@@ -75,3 +75,7 @@ a{
 .logged-in #login {
 	display: none;
 }
+
+#write-title{
+    resize: none;
+}

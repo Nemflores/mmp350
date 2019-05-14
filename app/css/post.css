@@ -1,10 +1,15 @@
 .post {
 	display: grid;
 	grid-template-columns: 100px 1fr;
-	grid-template-areas: 
+	grid-template-areas:
+        "title title"
 		"photo post-text"
 		"photo post-info";
 	grid-gap: 1em;
+}
+
+.title{
+    grid-area:title;
 }
 
 .photo {
