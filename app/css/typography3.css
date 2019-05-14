@@ -82,6 +82,8 @@ body{
 h2{
     text-align: center;
     font-family: sans-serif;
+    margin-bottom: 100px;
+    border: dotted 5px black;
 }
 
 .post-title{
