@@ -17,14 +17,13 @@ html, #container{
    background-color: var(--background);
 }
 
-#title, #profile-display-name{
+#title{
 	color: var(--title-color);
 	background-color: var(--menuback);
 	border-radius: 2em;
 	padding: 1px 10px;
-  text-shadow:5px 1px var(--title-shadow);
-    
-}
+    text-shadow:5px 1px var(--title-shadow);
+    }
 
 #login *, #sign-up *,#post *{
    

@@ -96,6 +96,16 @@ h2{
     margin-bottom: -10px; 
 }
 
+#profile-display-name{
+    font-family: sans-serif;
+    background-color: dodgerblue;
+    border-radius: 3em;
+    width: 200px;
+    text-align: center;
+    box-shadow: 3px 3px black;  
+}
+
+
 
 
 

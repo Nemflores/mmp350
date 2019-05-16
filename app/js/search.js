@@ -3,7 +3,7 @@ const query = document.getElementById('query');
 const submitQuery = document.getElementById('submit-query');
 
 const db = firebase.database();
-const ref = db.ref('posts').orderByChild('text');
+const ref = db.ref('posts');
 
 submitQuery.addEventListener('click', getQuery);
 query.addEventListener('keydown', function(event) {
@@ -19,7 +19,8 @@ function getQuery() {
 	const value = query.value;
 	ref.on('child_added', function(snapshot) {
 		const post = snapshot.val();
-		if (post.text.toLowerCase().includes(value.toLowerCase())) {
+		if (post.title.toLowerCase().includes(value.toLowerCase()) || 
+           post.text.toLowerCase().includes(value.toLowerCase())) {
 			createPost(post, snapshot.key);
 		}
 	});

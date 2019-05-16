@@ -41,12 +41,15 @@
     margin-top: -25%;
     overflow-y: scroll;
     height: 600px;
+    width: 600px;
     border: solid 3px;
+    box-shadow: 5px 5px black;
 }
 
 
 #search{
     grid-area: search;
+    padding-bottom: 100px;
 }
 
 a{
