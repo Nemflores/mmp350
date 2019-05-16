@@ -39,7 +39,7 @@
 #posts {
     grid-area: posts;
     margin-top: -25%;
-    overflow: scroll;
+    overflow-y: scroll;
     height: 600px;
     border: solid 3px;
 }
