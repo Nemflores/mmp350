@@ -23,8 +23,4 @@ function addPost() {
 }
 
 submitPost.addEventListener('click', addPost);
-postText.addEventListener('keydown', function(event) {
-	if (event.which == 13 || event.key == 'Enter') {
-		addPost();	
-	}
-});
+;
