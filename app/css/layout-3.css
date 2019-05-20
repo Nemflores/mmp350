@@ -9,8 +9,8 @@
     
     grid-template-areas:
         " menu menu menu menu menu"
-        " signup none header search search"
-        "login none header posts posts"
+        " signup header header search search"
+        "login header header posts posts"
         " main post post posts posts";
 }
 
